@@ -38,7 +38,7 @@ This project models a real-world enterprise WAN where multiple branch offices co
 
 - Chennai Branch
 - Hyderabad Branch
-- Engineering Branch
+- Bangalore Branch
 - Pune Branch
 
 ### ISP Backbone
@@ -61,7 +61,7 @@ This project models a real-world enterprise WAN where multiple branch offices co
 
 | Technology | Purpose |
 |------------|---------|
-| GRE Tunnel | Secure logical connectivity between Chennai and Pune branches |
+| GRE Tunnel | Provides secure logical connectivity between Chennai and Pune branches |
 | Dynamic NAT | Maps private IP addresses to a pool of public IP addresses |
 | Static NAT | Maps internal servers to fixed public IP addresses |
 | PAT (NAT Overload) | Allows multiple devices to share a single public IP address |
@@ -82,6 +82,7 @@ This project models a real-world enterprise WAN where multiple branch offices co
 - Static Routing
 - DNS
 - HTTP
+- Enterprise Networking
 
 ---
 
@@ -91,7 +92,7 @@ This project models a real-world enterprise WAN where multiple branch offices co
 |------|-------------|
 | `Project_GRE_VPN.pkt` | Cisco Packet Tracer project |
 | `Topology_Design.png` | Enterprise WAN topology |
-| `Output(1).png` | Browser connectivity verification |
+| `Output_1.png` | Browser connectivity verification |
 | `README.md` | Project documentation |
 
 ---
@@ -116,7 +117,7 @@ The project successfully demonstrates:
 
 The following screenshot verifies successful access to the hosted web server through the enterprise WAN, demonstrating correct routing, NAT translation, DNS resolution, and HTTP service availability.
 
-![Website Verification](Output(1).png)
+![Website Verification](Output_1.png)
 
 ---
 
@@ -129,7 +130,7 @@ This architecture is applicable to:
 - Educational Institutions
 - Government Organizations
 - IT Service Providers
-- Multi-Branch Companies
+- Multi-Branch Enterprises
 
 ---
 
@@ -176,6 +177,7 @@ git clone https://github.com/praveen272004/Enterprise-WAN-using-GRE-NAT.git
 3. Run the project in **Realtime** or **Simulation** mode.
 
 4. Verify:
+
    - GRE Tunnel Connectivity
    - Dynamic NAT Translation
    - Static NAT Mappings
@@ -188,15 +190,13 @@ git clone https://github.com/praveen272004/Enterprise-WAN-using-GRE-NAT.git
 
 ## Case Study
 
-A growing enterprise with branch offices in **Chennai, Hyderabad, Engineering, and Pune** requires secure communication between geographically distributed locations while providing Internet connectivity and public-facing services. This project simulates an ISP-connected WAN where a **GRE tunnel securely connects the Chennai and Pune branches**, Dynamic NAT and PAT provide Internet access for internal users, and Static NAT publishes enterprise web and DNS servers. The solution demonstrates scalable WAN architecture, efficient IPv4 address utilization, secure inter-branch communication, and enterprise-grade network services.
+A growing enterprise with branch offices in **Chennai, Hyderabad, Bangalore, and Pune** requires secure communication between geographically distributed locations while providing Internet connectivity and public-facing services. This project simulates an ISP-connected WAN where a **GRE tunnel securely connects the Chennai and Pune branches**, Dynamic NAT and PAT provide Internet access for internal users, and Static NAT publishes enterprise web and DNS servers. The solution demonstrates scalable WAN architecture, efficient IPv4 address utilization, secure inter-branch communication, and enterprise-grade network services.
 
 ---
 
 ## Author
 
 **Praveen M**
-
-Electronics and Communication Engineering (ECE)
 
 ---
 
