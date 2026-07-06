@@ -1,18 +1,18 @@
 # Enterprise WAN using GRE & NAT
 
-A Cisco Packet Tracer project that simulates a multi-site Enterprise Wide Area Network (WAN) connecting geographically distributed branch offices through an ISP backbone. The project demonstrates enterprise-grade networking concepts including **GRE Tunneling**, **Dynamic NAT**, **Static NAT**, and **PAT (NAT Overload)**, enabling secure inter-branch communication, efficient IPv4 address utilization, and public service hosting.
-
----
-
-## Project Overview
-
-This project models a real-world enterprise WAN where multiple branch offices communicate through an ISP infrastructure. A GRE tunnel is established between the **Chennai** and **Pune** branches to provide secure logical connectivity, while Dynamic NAT, Static NAT, and PAT enable Internet access and public service hosting. The project also includes DNS resolution and HTTP web services to simulate enterprise networking environments.
+A Cisco Packet Tracer project that simulates a multi-site Enterprise Wide Area Network (WAN) connecting geographically distributed branch offices through an ISP backbone. The project demonstrates enterprise-grade networking concepts including **GRE Tunnel**, **Dynamic NAT**, **Static NAT**, and **PAT (NAT Overload)** for secure communication, efficient IPv4 address utilization, and public service hosting.
 
 ---
 
 ## Network Topology
 
 ![Enterprise WAN Topology](Topology_Design.png)
+
+---
+
+## Project Overview
+
+This project models a real-world enterprise WAN where multiple branch offices communicate through an ISP backbone. A GRE tunnel is configured between the **Chennai** and **Pune** branches to establish secure logical connectivity. Different NAT techniques are implemented across branch offices to provide Internet connectivity while DNS and HTTP servers simulate enterprise network services.
 
 ---
 
@@ -41,28 +41,27 @@ This project models a real-world enterprise WAN where multiple branch offices co
 - Engineering Branch
 - Pune Branch
 
-### ISP Network
+### ISP Backbone
 
-- ISP Core Routers
-- WAN Connectivity Between Sites
+- Multi-router WAN Infrastructure
+- Static Routing Between Sites
 - GRE Tunnel Between Chennai and Pune
 
 ### Network Services
 
-- GRE Tunnel
 - Dynamic NAT
 - Static NAT
 - PAT (NAT Overload)
-- DNS
-- HTTP Web Hosting
+- DNS Server
+- HTTP Web Servers
 
 ---
 
-## NAT & GRE Implementation
+## GRE & NAT Implementation
 
 | Technology | Purpose |
 |------------|---------|
-| GRE Tunnel | Provides secure logical connectivity between Chennai and Pune branches |
+| GRE Tunnel | Secure logical connectivity between Chennai and Pune branches |
 | Dynamic NAT | Maps private IP addresses to a pool of public IP addresses |
 | Static NAT | Maps internal servers to fixed public IP addresses |
 | PAT (NAT Overload) | Allows multiple devices to share a single public IP address |
@@ -73,15 +72,16 @@ This project models a real-world enterprise WAN where multiple branch offices co
 
 - Cisco Packet Tracer
 - Cisco IOS CLI
+- Cisco 2811 Routers
+- Cisco 2960 Switches
 - IPv4 Addressing
 - GRE Tunnel
 - Dynamic NAT
 - Static NAT
 - PAT (NAT Overload)
-- WAN Routing
+- Static Routing
 - DNS
 - HTTP
-- Enterprise Networking
 
 ---
 
@@ -89,9 +89,9 @@ This project models a real-world enterprise WAN where multiple branch offices co
 
 | File | Description |
 |------|-------------|
-| `Project_GRE_VPN.pkt` | Cisco Packet Tracer project file |
+| `Project_GRE_VPN.pkt` | Cisco Packet Tracer project |
 | `Topology_Design.png` | Enterprise WAN topology |
-| `Output(1).png` | GRE tunnel and website connectivity verification |
+| `Output(1).png` | Browser connectivity verification |
 | `README.md` | Project documentation |
 
 ---
@@ -104,32 +104,32 @@ The project successfully demonstrates:
 - ✅ Dynamic NAT Translation
 - ✅ Static NAT Configuration
 - ✅ PAT (NAT Overload)
-- ✅ Branch-to-Branch Connectivity
-- ✅ Internet Access
+- ✅ Branch-to-Branch Communication
+- ✅ Internet Connectivity
 - ✅ DNS Name Resolution
-- ✅ Public Website Accessibility
-- ✅ End-to-End WAN Communication
+- ✅ HTTP Website Accessibility
+- ✅ End-to-End WAN Routing
 
-### Enterprise WAN Topology
+---
 
-![Enterprise WAN Topology](Topology_Design.png)
+## Output
 
-### GRE Tunnel & Website Verification
+The following screenshot verifies successful access to the hosted web server through the enterprise WAN, demonstrating correct routing, NAT translation, DNS resolution, and HTTP service availability.
 
-![GRE Tunnel Verification](Output(1).png)
+![Website Verification](Output(1).png)
 
 ---
 
 ## Real-World Applications
 
-This architecture is similar to enterprise networks deployed in:
+This architecture is applicable to:
 
-- Corporate Organizations
+- Corporate Enterprises
 - Banking Networks
 - Educational Institutions
-- Government Agencies
-- IT Service Companies
-- Multi-Branch Enterprises
+- Government Organizations
+- IT Service Providers
+- Multi-Branch Companies
 
 ---
 
@@ -140,7 +140,7 @@ This architecture is similar to enterprise networks deployed in:
 - Dynamic NAT Configuration
 - Static NAT Configuration
 - PAT (NAT Overload)
-- WAN Routing
+- Static Routing
 - DNS Configuration
 - HTTP Server Configuration
 - Cisco IOS CLI
@@ -152,14 +152,14 @@ This architecture is similar to enterprise networks deployed in:
 
 - Cisco Packet Tracer 8.x or later
 
-### Basic Knowledge Required
+### Basic Knowledge
 
 - Computer Networks
 - IPv4 Addressing
-- Routing
+- Routing Concepts
 - Cisco IOS CLI
-- NAT Concepts
-- GRE Tunneling
+- NAT
+- GRE Tunnel
 
 ---
 
@@ -171,31 +171,32 @@ This architecture is similar to enterprise networks deployed in:
 git clone https://github.com/praveen272004/Enterprise-WAN-using-GRE-NAT.git
 ```
 
-2. Open `Project_GRE_VPN.pkt` using Cisco Packet Tracer.
+2. Open **Project_GRE_VPN.pkt** using Cisco Packet Tracer.
 
 3. Run the project in **Realtime** or **Simulation** mode.
 
 4. Verify:
-
    - GRE Tunnel Connectivity
    - Dynamic NAT Translation
    - Static NAT Mappings
    - PAT (NAT Overload)
    - Branch-to-Branch Communication
-   - DNS Name Resolution
-   - Website Accessibility
+   - DNS Resolution
+   - HTTP Website Accessibility
 
 ---
 
 ## Case Study
 
-A growing enterprise with branch offices in **Chennai, Hyderabad, Engineering, and Pune** requires secure communication across geographically distributed locations while providing Internet connectivity and public-facing services. This project simulates an ISP-connected WAN where a **GRE tunnel securely connects the Chennai and Pune branches**, Dynamic NAT and PAT enable Internet access for internal users, and Static NAT publishes enterprise web and DNS servers. The solution demonstrates scalable WAN architecture, secure inter-branch communication, efficient IPv4 address utilization, and reliable enterprise networking.
+A growing enterprise with branch offices in **Chennai, Hyderabad, Engineering, and Pune** requires secure communication between geographically distributed locations while providing Internet connectivity and public-facing services. This project simulates an ISP-connected WAN where a **GRE tunnel securely connects the Chennai and Pune branches**, Dynamic NAT and PAT provide Internet access for internal users, and Static NAT publishes enterprise web and DNS servers. The solution demonstrates scalable WAN architecture, efficient IPv4 address utilization, secure inter-branch communication, and enterprise-grade network services.
 
 ---
 
 ## Author
 
 **Praveen M**
+
+Electronics and Communication Engineering (ECE)
 
 ---
 
