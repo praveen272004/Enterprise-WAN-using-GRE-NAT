@@ -92,7 +92,7 @@ This project models a real-world enterprise WAN where multiple branch offices co
 |------|-------------|
 | `Project_GRE_VPN.pkt` | Cisco Packet Tracer project |
 | `Topology_Design.png` | Enterprise WAN topology |
-| `Output_1.png` | Browser connectivity verification |
+| `Output.png` | Browser connectivity verification |
 | `README.md` | Project documentation |
 
 ---
@@ -117,7 +117,7 @@ The project successfully demonstrates:
 
 The following screenshot verifies successful access to the hosted web server through the enterprise WAN, demonstrating correct routing, NAT translation, DNS resolution, and HTTP service availability.
 
-![Website Verification](Output_1.png)
+![Website Verification](Output.png)
 
 ---
 
